@@ -337,7 +337,7 @@ export function SideBar(props: { className?: string }) {
               </Link>
             </div>
             <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/feeday/NextChat" target="_blank" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
                   icon={<GithubIcon />}
@@ -348,7 +348,7 @@ export function SideBar(props: { className?: string }) {
 
 
       <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+              <a href="https://puck.chat" target="_blank" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
                   icon={<GithubIcon />}
