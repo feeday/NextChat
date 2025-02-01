@@ -2,7 +2,7 @@
 
 一键免费部署你的私人 ChatGPT 网页应用，支持 Claude, GPT4 & Gemini Pro 模型。
 
-[NextChatAI](https://nextchat.dev/chat?utm_source=readme) / [演示 Demo](https://chat-gpt-next-web.vercel.app/) / [演示 Demo](https://feeday.cn/) / [反馈 Issues](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [加入 Discord](https://discord.gg/zrhvHCr79N)
+[NextChatAI](https://nextchat.dev/chat?utm_source=readme) / [AIchatOS2](https://puck.chat/) / [OpenKEY](https://puck.host/) /[演示 Demo](https://chat-gpt-next-web.vercel.app/) / [反馈 Issues](https://github.com/Yidadaa/ChatGPT-Next-Web/issues) / [加入 Discord](https://discord.gg/zrhvHCr79N)
 
 [<img src="https://vercel.com/button" alt="Deploy on Zeabur" height="30">](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FChatGPTNextWeb%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=nextchat&repository-name=NextChat) [<img src="https://zeabur.com/button.svg" alt="Deploy on Zeabur" height="30">](https://zeabur.com/templates/ZBUEFA)  [<img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" height="30">](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
 
@@ -15,10 +15,12 @@
 ## 开始使用
 
 <div align="center">
-   
-![主界面](./docs/images/cover.png)
-
+  <a href="https://feeday.cn/" target="_blank">
+    <img src="./docs/images/cover.png" alt="主界面">
+  </a>
 </div>
+
+
 
 ## 保持更新
 
