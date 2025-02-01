@@ -255,33 +255,6 @@ export function SideBar(props: { className?: string }) {
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
       >
-<div className={styles["sidebar-header-bar"]}>
-  <a href="https://puck.host" target="_blank" rel="noopener noreferrer" className={styles["sidebar-bar-button"]}>
-    <IconButton
-      icon={<MaskIcon />}
-      text={shouldNarrow ? undefined : "国内密钥代理"}
-      shadow
-    />
-  </a>
-  {mcpEnabled && (
-    <a href="https://puck.chat" target="_blank" rel="noopener noreferrer" className={styles["sidebar-bar-button"]}>
-      <IconButton
-        icon={<McpIcon />}
-        text={shouldNarrow ? undefined : "免费模型试用"}
-        shadow
-      />
-    </a>
-  )}
-  <a href="#" onClick={() => setshowDiscoverySelector(true)} className={styles["sidebar-bar-button"]}>
-    <IconButton
-      icon={<DiscoveryIcon />}
-      text={shouldNarrow ? undefined : Locale.Discovery.Name}
-      shadow
-    />
-  </a>
-</div>
-
-
         {showDiscoverySelector && (
           <Selector
             items={[
@@ -338,7 +311,25 @@ export function SideBar(props: { className?: string }) {
                   shadow
                 />
               </a>
-            </div>     
+            </div>
+            <div className={styles["sidebar-action"]}>
+              <a href="https://puck.chat" rel="noopener noreferrer">
+                <IconButton
+                  aria={Locale.Export.MaskIcon}
+                  icon={<GithubIcon />}
+                  shadow
+                />
+              </a>
+            </div>    
+            <div className={styles["sidebar-action"]}>
+              <a href="https://puck.host" rel="noopener noreferrer">
+                <IconButton
+                  aria={Locale.Export.McpIcon}
+                  icon={<GithubIcon />}
+                  shadow
+                />
+              </a>
+            </div>    
           </>
         }
         secondaryAction={
