@@ -57,6 +57,12 @@
 code1,code2,code3
 ```
 
+## 修改页面
+
+```
+/app/components/sidebar.tsx
+```
+
 增加或修改该环境变量后，请**重新部署**项目使改动生效。
 
 ## 环境变量
