@@ -255,24 +255,24 @@ export function SideBar(props: { className?: string }) {
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
       >
- <div className={styles["sidebar-header-bar"]}>
-  <a href="https://puck.chat" target="_blank" rel="noopener noreferrer" className={styles["sidebar-bar-button"]}>
+<div className={styles["sidebar-header-bar"]}>
+  <a href="https://puck.host" target="_blank" rel="noopener noreferrer" className={styles["sidebar-bar-button"]}>
     <IconButton
       icon={<MaskIcon />}
-      text={shouldNarrow ? undefined : Locale.Mask.Name}
+      text={shouldNarrow ? undefined : "国内密钥代理"}
       shadow
     />
   </a>
   {mcpEnabled && (
-    <a href="https://puck.host" target="_blank" rel="noopener noreferrer" className={styles["sidebar-bar-button"]}>
+    <a href="https://puck.chat" target="_blank" rel="noopener noreferrer" className={styles["sidebar-bar-button"]}>
       <IconButton
         icon={<McpIcon />}
-        text={shouldNarrow ? undefined : Locale.Mcp.Name}
+        text={shouldNarrow ? undefined : "免费模型试用"}
         shadow
       />
     </a>
   )}
-  <a href="https://puck.chat" onClick={() => setshowDiscoverySelector(true)} className={styles["sidebar-bar-button"]}>
+  <a href="#" onClick={() => setshowDiscoverySelector(true)} className={styles["sidebar-bar-button"]}>
     <IconButton
       icon={<DiscoveryIcon />}
       text={shouldNarrow ? undefined : Locale.Discovery.Name}
@@ -280,6 +280,7 @@ export function SideBar(props: { className?: string }) {
     />
   </a>
 </div>
+
 
         {showDiscoverySelector && (
           <Selector
