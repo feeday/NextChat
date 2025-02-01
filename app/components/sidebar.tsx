@@ -255,39 +255,32 @@ export function SideBar(props: { className?: string }) {
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
       >
-        <div className={styles["sidebar-header-bar"]}>
-          <IconButton
-            icon={<MaskIcon />}
-            text={shouldNarrow ? undefined : Locale.Mask.Name}
-            className={styles["sidebar-bar-button"]}
-            onClick={() => {
-              if (config.dontShowMaskSplashScreen !== true) {
-                navigate(Path.NewChat, { state: { fromHome: true } });
-              } else {
-                navigate(Path.Masks, { state: { fromHome: true } });
-              }
-            }}
-            shadow
-          />
-          {mcpEnabled && (
-            <IconButton
-              icon={<McpIcon />}
-              text={shouldNarrow ? undefined : Locale.Mcp.Name}
-              className={styles["sidebar-bar-button"]}
-              onClick={() => {
-                navigate(Path.McpMarket, { state: { fromHome: true } });
-              }}
-              shadow
-            />
-          )}
-          <IconButton
-            icon={<DiscoveryIcon />}
-            text={shouldNarrow ? undefined : Locale.Discovery.Name}
-            className={styles["sidebar-bar-button"]}
-            onClick={() => setshowDiscoverySelector(true)}
-            shadow
-          />
-        </div>
+ <div className={styles["sidebar-header-bar"]}>
+  <a href="https://puck.chat" target="_blank" rel="noopener noreferrer" className={styles["sidebar-bar-button"]}>
+    <IconButton
+      icon={<MaskIcon />}
+      text={shouldNarrow ? undefined : Locale.Mask.Name}
+      shadow
+    />
+  </a>
+  {mcpEnabled && (
+    <a href="https://puck.host" target="_blank" rel="noopener noreferrer" className={styles["sidebar-bar-button"]}>
+      <IconButton
+        icon={<McpIcon />}
+        text={shouldNarrow ? undefined : Locale.Mcp.Name}
+        shadow
+      />
+    </a>
+  )}
+  <a href="https://puck.chat" onClick={() => setshowDiscoverySelector(true)} className={styles["sidebar-bar-button"]}>
+    <IconButton
+      icon={<DiscoveryIcon />}
+      text={shouldNarrow ? undefined : Locale.Discovery.Name}
+      shadow
+    />
+  </a>
+</div>
+
         {showDiscoverySelector && (
           <Selector
             items={[
@@ -337,28 +330,14 @@ export function SideBar(props: { className?: string }) {
               </Link>
             </div>
             <div className={styles["sidebar-action"]}>
-              <a href="https://github.com/feeday/NextChat" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/feeday/NextChat" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
                   icon={<GithubIcon />}
                   shadow
                 />
               </a>
-            </div>
-
-
-      <div className={styles["sidebar-action"]}>
-              <a href="https://puck.chat" target="_blank" rel="noopener noreferrer">
-                <IconButton
-                  aria={Locale.Export.MessageFromChatGPT}
-                  icon={<GithubIcon />}
-                  shadow
-                />
-              </a>
-            </div>
-
-
-            
+            </div>     
           </>
         }
         secondaryAction={
