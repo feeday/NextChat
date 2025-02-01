@@ -337,16 +337,7 @@ export function SideBar(props: { className?: string }) {
               </Link>
             </div>
             <div className={styles["sidebar-action"]}>
-              <a href="https://puck.host" target="_blank" rel="noopener noreferrer">
-                <IconButton
-                  aria={Locale.Settings.Title}
-                  icon={<SettingsIcon />}
-                  shadow
-                />
-              </a>
-            </div>
-            <div className={styles["sidebar-action"]}>
-              <a href="https://github.com/feeday/NextChat" rel="noopener noreferrer">
+              <a href="https://github.com/feeday/NextChat/tree/main?tab=readme-ov-file#nextchat" target="_blank" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
                   icon={<GithubIcon />}
