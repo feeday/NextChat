@@ -250,11 +250,11 @@ export function SideBar(props: { className?: string }) {
       {...props}
     >
       <SideBarHeader
-        title="Feeday"
+        title="NextChat"
         subTitle="Build your own AI assistant."
         logo={<ChatGptIcon />}
         shouldNarrow={shouldNarrow}
-      > 
+      >
         <div className={styles["sidebar-header-bar"]}>
           <IconButton
             icon={<MaskIcon />}
@@ -337,7 +337,7 @@ export function SideBar(props: { className?: string }) {
               </Link>
             </div>
             <div className={styles["sidebar-action"]}>
-              <a href="https://github.com/feeday/NextChat" rel="noopener noreferrer">
+              <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
                   icon={<GithubIcon />}
@@ -345,15 +345,6 @@ export function SideBar(props: { className?: string }) {
                 />
               </a>
             </div>
-            <div className={styles["sidebar-action"]}>
-              <a href="https://puck.chat" rel="noopener noreferrer">
-                <IconButton
-                  aria={Locale.Export.MaskIcon}
-                  icon={<GithubIcon />}
-                  shadow
-                />
-              </a>
-            </div>       
           </>
         }
         secondaryAction={
