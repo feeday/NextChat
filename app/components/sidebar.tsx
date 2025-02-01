@@ -353,16 +353,7 @@ export function SideBar(props: { className?: string }) {
                   shadow
                 />
               </a>
-            </div>    
-            <div className={styles["sidebar-action"]}>
-              <a href="https://puck.host" rel="noopener noreferrer">
-                <IconButton
-                  aria={Locale.Export.McpIcon}
-                  icon={<GithubIcon />}
-                  shadow
-                />
-              </a>
-            </div>    
+            </div>       
           </>
         }
         secondaryAction={
