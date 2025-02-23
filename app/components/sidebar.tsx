@@ -348,7 +348,7 @@ export function SideBar(props: { className?: string }) {
               <a href="https://github.com/feeday/NextChat/tree/main?tab=readme-ov-file#nextchat" target="_blank" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
-                  icon={<GithubIcon />}
+                  icon={<FaGlobe />}
                   shadow
                 />
               </a>
