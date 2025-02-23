@@ -337,7 +337,7 @@ export function SideBar(props: { className?: string }) {
               </Link>
             </div>
             <div className={styles["sidebar-action"]}>
-              <a href="https://github.com/feeday/NextChat/tree/main?tab=readme-ov-file#nextchat" target="_blank" rel="noopener noreferrer">
+              <a href="https://openkey.cloud/register?aff=22CVF" target="_blank" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
                   icon={<GithubIcon />}
@@ -345,10 +345,10 @@ export function SideBar(props: { className?: string }) {
                 />
               </a>
             </div>      <div className={styles["sidebar-action"]}>
-              <a href="https://github.com/feeday/NextChat/tree/main?tab=readme-ov-file#nextchat" target="_blank" rel="noopener noreferrer">
+              <a href="https://chat18.aichatos18.com" target="_blank" rel="noopener noreferrer">
                 <IconButton
                   aria={Locale.Export.MessageFromChatGPT}
-                  icon={<FaGlobe />}
+                  icon={<GithubIcon />}
                   shadow
                 />
               </a>
